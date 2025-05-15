@@ -1,0 +1,52 @@
+
+@import "tailwindcss";
+
+body,html{
+ 
+  background-color: #A9734E;
+  text-align: center;
+
+}
+
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+.fade-in {
+  animation: fadeIn 0.3s ease forwards;
+}
+@keyframes typeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes glow {
+  0%, 100% {
+    text-shadow: 0 0 5px #facc15, 0 0 10px #facc15, 0 0 15px #facc15;
+    color: #fef9c3;
+  }
+  50% {
+    text-shadow: 0 0 20px #facc15, 0 0 30px #facc15, 0 0 40px #facc15;
+    color: #fde68a;
+  }
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.animate-typeIn {
+  animation: typeIn 0.5s ease forwards infinite;
+}
+
+.animate-glow {
+  animation: glow 2s ease-in-out infinite;
+}
+
+
+/*background-color: #FCF8F5;*/
